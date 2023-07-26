@@ -1,11 +1,10 @@
-
-import * as React from "react";
+import React from "react";
 // import Link from "next/link";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { VariantProps, cva } from "class-variance-authority";
 
 // import { cn } from "";
-import {cn} from '../../lib/utils'
+import { cn } from "../../lib/utils";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:hover:bg-slate-800 dark:hover:text-slate-100 disabled:opacity-50 dark:focus:ring-slate-400 disabled:pointer-events-none dark:focus:ring-offset-slate-900 data-[state=open]:bg-slate-100 dark:data-[state=open]:bg-slate-800",
@@ -25,9 +24,9 @@ const buttonVariants = cva(
         link: "bg-transparent dark:bg-transparent underline-offset-4 hover:underline text-slate-900 dark:text-slate-300 hover:bg-transparent dark:hover:bg-transparent",
       },
       size: {
-        default: "h-10 py-2 px-4",
-        sm: "h-9 px-2 rounded-md",
-        lg: "h-11 px-8 rounded-md",
+        default: "h-10 text-xl py-2 px-4",
+        sm: "h-9 px-2 text-md rounded-md",
+        lg: "h-11 px-8 text-2xl rounded-md",
       },
     },
     defaultVariants: {
